@@ -1,0 +1,32 @@
+.body-lis{
+    background-color: #3E2535;
+}
+
+.main-lis .zdj_g{
+    border: 1px solid #C27C66;
+    max-height: 500px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.main-lis .hero-image img{
+    border: 1px solid #C27C66;
+    max-height: 100px;
+    padding: 4px;
+}
+
+.main-lis .hero-image img:hover{
+    border: 1px solid #3E2535;
+}
+
+.main-lis .panel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    padding: 15px 150px;
+    border: 2px solid #C27C66;
+    text-align: center;
+}

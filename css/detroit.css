@@ -1,0 +1,32 @@
+.body-detroit{
+    background-color: #17221F;
+}
+
+.main-detroit .zdj_g{
+    border: 1px solid #407B99;
+    max-height: 500px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.main-detroit .hero-image img{
+    border: 1px solid #407B99;
+    max-height: 100px;
+    padding: 4px;
+}
+
+.main-detroit .hero-image img:hover{
+    border: 1px solid #17221F;
+}
+
+.main-detroit .panel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    padding: 15px 150px;
+    border: 2px solid #407B99;
+    text-align: center;
+}

@@ -1,0 +1,32 @@
+.body-tlou{
+    background-color: #161C20;
+}
+
+.main-tlou .zdj_g{
+    border: 1px solid #44779A;
+    max-height: 500px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.main-tlou .hero-image img{
+    border: 1px solid #44779A;
+    max-height: 100px;
+    padding: 4px;
+}
+
+.main-tlou .hero-image img:hover{
+    border: 1px solid #161C20;
+}
+
+.main-tlou .panel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    padding: 15px 150px;
+    border: 2px solid #44779A;
+    text-align: center;
+}

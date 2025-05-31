@@ -1,0 +1,199 @@
+@import "./tlou.css";
+@import "./lis.css";
+@import "./detroit.css";
+@import "./stray.css";
+@import "./form.css";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace, sans-serif;
+}
+
+.body-rdr{
+    background-color: #0D0505;
+}
+
+nav{
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    width: 100%;
+    text-align: center;
+    background-color: aliceblue;
+    font-size: 20px;
+}
+
+nav ul li{
+    position: relative;
+    display: inline-block;
+}
+
+nav li a{
+    display: block;
+    text-decoration: none;
+    color: rgb(11, 19, 25);
+    letter-spacing: 2px;
+    font-weight: 700;
+    padding: 20px 30px;
+    transition: .3s ease;
+}
+
+nav li a:hover{
+    opacity: .8;
+    letter-spacing: 5px;
+    background-color: rgb(224, 234, 242);
+}
+
+nav li p{
+    position: absolute; 
+    top: 70px; 
+    left: 0; 
+    background-color: rgb(210, 223, 234); 
+    color: rgb(11, 19, 25);
+    font-size: 16px;
+    border-radius: 10px;
+    width: 100%; 
+    text-align: center; 
+    padding: 5px; 
+    z-index: 10; 
+    display: none; 
+} 
+
+header{
+    margin-top: 63.2px;
+}
+
+header p{
+    font-size: 18px;
+    text-align: center;
+    padding: 18px;
+    color: aliceblue;
+}
+
+/* NAV + header END */
+
+.hero-image-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.zdj_g{
+    border: 1px solid #F3AC2C;
+    max-height: 500px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.hero-image img{
+    border: 1px solid #F3AC2C;
+    max-height: 100px;
+    padding: 4px;
+}
+
+.hero-image img:hover{
+    border: 1px solid #0D0505;
+}
+
+/* HERO IMG END */
+
+main h1{
+    color: aliceblue;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.text{
+    width: 60%;
+    margin: 0 auto;
+}
+
+main h2{
+    color: aliceblue;
+    font-size: 25px;
+    margin: 50px 0;
+}
+
+main p{
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.bohaterowie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    position: relative;
+}
+
+.bohaterowie img{
+    width: 50%;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.main-rdr .panel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    padding: 15px 150px;
+    border: 2px solid #F3AC2C;
+    text-align: center;
+}
+
+/* MAIN TEXT END */
+
+.footer-box{
+    background-color: aliceblue;
+    margin-top: 50px;
+}
+
+.footer-img{
+    display: flex;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.footer-img img{
+    height: 150px;
+}
+
+.footer-media-tiktok{
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-media-face{
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-img h3 a{
+    color: black;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.footer-img h3 a:hover{
+    color: rgb(31, 56, 75);
+}
+
+.footer-copy{
+    padding: 30px;
+    text-align: center;
+    color: rgb(11, 19, 25);
+}
+
+/* FOOTER END */

@@ -1,0 +1,32 @@
+.body-stray{
+    background-color: #5B221D;
+}
+
+.main-stray .zdj_g{
+    border: 1px solid #D6501D;
+    max-height: 500px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.main-stray .hero-image img{
+    border: 1px solid #D6501D;
+    max-height: 100px;
+    padding: 4px;
+}
+
+.main-stray .hero-image img:hover{
+    border: 1px solid #5B221D;
+}
+
+.main-stray .panel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    padding: 15px 150px;
+    border: 2px solid #D6501D;
+    text-align: center;
+}

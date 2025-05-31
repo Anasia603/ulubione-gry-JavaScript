@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="body-form">
+    <nav>
+        <ul>
+            <li>
+                <a href="./rdr.html">RDR2</a>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, officia!</p> 
+            </li>
+            <li>
+                <a href="./tlou.html">TLOU</a>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, officia!</p> 
+            </li>
+            <li>
+                <a href="./lis.html">LiS</a>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, officia!</p> 
+            </li>
+            <li>
+                <a href="./detroit.html">DETROIT</a>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, officia!</p> 
+            </li>
+            <li>
+                <a href="./stray.html">STRAY</a>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, officia!</p> 
+            </li>
+            <li>
+                <a href="#">FORM</a>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, officia!</p> 
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <p>Ranking moich ulubionych gier!</p>
+    </header>
+
+    <main class="main-form">
+        <h1>Zapytanie do recenzenta</h1>
+
+        <form enctype="text/plain" method="post" onsubmit="return valid(this)" class="formularz">
+            
+            <p>Imię:</p>
+            <input type="text" name="imie" id="imie" class="pole" size="30"> <br>
+            <p>Nazwisko:</p>
+            <input type="text" name="nazw" id="nazw" class="pole" size="30"> <br>
+            <p>E-mail:</p>
+            <input type="text" name="mail" id="mail" class="pole" size="30"> <br>
+
+            <div class="void"></div>
+
+            <p>Wpisz swoje zapytanie:</p>
+            <textarea name="uwagi" id="uwagi" cols="45" rows="5"></textarea> <br>
+            
+            <div class="void"></div>
+
+            <div class="but">
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Zresetuj">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-box">
+            <div class="footer-img">
+                <div class="footer-media-tiktok">
+                    <h3><a href="" target="_blank">www.cats-tiktok@cats.pl</a></h3>
+                </div>
+
+                <img src="./img/cat.webp" alt="">
+
+                <div class="footer-media-face">
+                    <h3><a href="https://www.facebook.com/p/Cats-100064782608150/?locale=pl_PL" target="_blank">www.cats-facebook@cats.pl</a></h3>
+                </div>
+            </div>
+
+            <div class="footer-copy">
+                <h4>&copy; Cats 2024</h4>
+            </div>
+       </div>
+    </footer>
+
+    <script>
+            function valid(form) {
+        if (form.imie.value == '') {
+            alert("pole Imie musi być wypełnione");
+            form.imie.focus();
+            return false;
+        }
+
+        const inputImie = form.querySelector("input[name=imie]");
+        const regImie = /^[AaĄąBbCcĆćDdEeĘęFfGgHhIiJjKkLlŁłMmNnŃńOoÓóPpRrSsŚśTtUuWwYyZzŹźŻż]{2,}$/i;
+
+        if (!regImie.test(inputImie.value)) {
+            alert("wpisz poprawnie Imię");
+            form.imie.focus();
+            return false;
+        }
+
+        if (form.nazw.value == '') {
+            alert("pole Nazwisko musi być wypełnione");
+            form.nazw.focus();
+            return false;
+        }
+
+        const inputNazw = form.querySelector("input[name=nazw]");
+        const regNazw = /^[AaĄąBbCcĆćDdEeĘęFfGgHhIiJjKkLlŁłMmNnŃńOoÓóPpRrSsŚśTtUuWwYyZzŹźŻż]{2,}$/i;
+
+        if (!regNazw.test(inputNazw.value)) {
+            alert("wpisz poprawnie Nazwisko");
+            form.nazw.focus();
+            return false;
+        }
+
+
+        if (form.mail.value == '') {
+            alert("pole E-mail musi być wypełnione");
+            form.mail.focus();
+            return false;
+        }
+
+        const inputEmail = form.querySelector("input[name=mail]");
+        const regEmail = /\S+@\S+\.\S+/;
+
+        if (!regEmail.test(inputEmail.value)) {
+            alert("wpisz poprawny e-mail");
+            form.mail.focus();
+            return false;
+        }
+    }
+    </script>
+</body>
+
+</html>

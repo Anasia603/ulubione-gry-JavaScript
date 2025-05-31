@@ -1,0 +1,22 @@
+.body-form{
+    background-color: rgb(52, 52, 87);
+    
+}
+
+.formularz{
+    position: relative;
+    width: 25%;
+    background-color: rgb(88, 108, 134);
+    color: rgb(36, 7, 11);
+    border: 10px solid rgb(14, 33, 88);
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.formularz p{
+    margin: 10px;
+}
+
+.void{
+    height: 20px;
+}
